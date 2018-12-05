@@ -1,0 +1,109 @@
+table {
+    border-collapse: collapse;
+    border-radius: 0.4rem;
+    text-align: left;
+    width: 100%;
+
+    th {
+        font-size: 1.9rem;
+        font-weight: 400;
+        color: $black;
+
+        &:first-child{
+            border-radius: 0.4rem 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 0.4rem 0 0;
+        }
+    }
+
+    td, th {
+        border-bottom: 0.1rem solid $black;
+        padding: 1.5rem 1.2rem 1rem;
+    }
+
+    &.black {
+        th {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    &.red {
+        th {
+            background-color: $red;
+            color: $white;
+        }
+
+        td {
+            border-color: $red;
+        }
+    }
+
+    &.green {
+        th {
+            background-color: $green;
+            color: $white;
+        }
+
+        td {
+            border-color: $green;
+        }
+    }
+
+    &.blue {
+        th {
+            background-color: $blue;
+            color: $white;
+        }
+
+        td {
+            border-color: $blue;
+        }
+    }
+
+    &.orange {
+        th {
+            background-color: $orange;
+        }
+
+        td {
+            border-color: $orange;
+        }
+    }
+
+    &.brown {
+        th {
+            background-color: $brown;
+            color: $white;
+        }
+
+        td {
+            border-color: $brown;
+        }
+    }
+
+    &.purple {
+        th {
+            background-color: $purple;
+            color: $white;
+        }
+
+        td {
+            border-color: $purple;
+        }
+    }
+
+    &.yellow {
+        th {
+            background-color: $yellow;
+        }
+    }
+
+    &.yellowgreen {
+        th {
+            background-color: $yellowgreen;
+        }
+    }
+}

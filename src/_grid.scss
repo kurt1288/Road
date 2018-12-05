@@ -1,0 +1,94 @@
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 3rem 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .column {
+        display: block;
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .column-1, .column-2, .column-25, .column-3, .column-33, .column-4, .column-5, .column-6, .column-67, .column-7, .column-75, .column-8, .column-9 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @for $i from 1 through 9 {
+        .offset-#{$i} {
+            margin-left: 0;
+        }
+    }
+
+    .offset-25, .offset-33, .offset-67, .offset-75 {
+        margin-left: 0;
+    }
+
+    & > div {
+        box-sizing: border-box;
+        padding: 0 0.7rem;
+    }
+}
+
+// This applies from 30rem (default 300px) and higher
+@media (min-width: 30rem) {
+    .row {
+        @for $i from 1 through 9 {
+            .column-#{$i} {
+                flex: 0 0 ($i * 10%);
+                max-width: $i * 10%;
+            }
+        }
+    
+        .column-25 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    
+        .column-33 {
+            flex: 0 0 (100% / 3);
+            max-width: (100% / 3);
+        }
+    
+        .column-67 {
+            flex: 0 0 ((100% / 3) * 2);
+            max-width: (100% / 3) * 2;
+        }
+    
+        .column-75 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+
+        @for $i from 1 through 9 {
+            .offset-#{$i} {
+                margin-left: ($i * 10%);
+            }
+        }
+    
+        .offset-25 {
+            margin-left: 25%;
+        }
+    
+        .offset-33 {
+            margin-left: (100% / 3);
+        }
+    
+        .offset-67 {
+            margin-left: (100% / 3) * 2;
+        }
+    
+        .offset-75 {
+            margin-left: 75%;
+        }
+    }
+}
