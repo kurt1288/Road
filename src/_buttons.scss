@@ -14,6 +14,7 @@
     padding: 0 2rem;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
 
     &[disabled] {
         cursor: default;
@@ -114,5 +115,12 @@
         &:focus, &:hover {
             background-color: lighten($yellowgreen, 5%);
         }
+    }
+}
+
+// This applies from 30rem (default 300px) and higher
+@media (min-width: 30rem) {
+    .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+        width: auto;
     }
 }

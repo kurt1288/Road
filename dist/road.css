@@ -25,7 +25,8 @@ body {
   margin-bottom: 1rem;
   padding: 0 2rem;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
   .button[disabled], button[disabled], input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled] {
     cursor: default;
     opacity: 0.5; }
@@ -86,6 +87,9 @@ body {
     .button.yellowgreen:focus, .button.yellowgreen:hover, button.yellowgreen:focus, button.yellowgreen:hover, input[type="button"].yellowgreen:focus, input[type="button"].yellowgreen:hover, input[type="reset"].yellowgreen:focus, input[type="reset"].yellowgreen:hover, input[type="submit"].yellowgreen:focus, input[type="submit"].yellowgreen:hover {
       background-color: #dbf000; }
 
+@media (min-width: 30rem) {
+  .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    width: auto; } }
 code {
   background: #ededed;
   border: 0.1rem solid #006747;

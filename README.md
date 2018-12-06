@@ -1,5 +1,5 @@
 # [Road](https://www.roadcss.com)
-A simple CSS boilerplate using road signs as design inspiration.
+A lightweight CSS framework using road signs as design inspiration.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/90293ba076f04e2197b68c32bd6354e9)](https://www.codacy.com/app/kurt1288/Road?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kurt1288/Road&amp;utm_campaign=Badge_Grade)
 
