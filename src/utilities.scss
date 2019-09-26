@@ -1,0 +1,41 @@
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-none {
+    float: none;
+}
+
+.f-right {
+    float: right;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-light {
+    font-weight: 200;
+}
+
+.t-normal {
+    font-weight: 400;
+}
+
+.t-bold {
+    font-weight: 600;
+}

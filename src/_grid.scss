@@ -5,11 +5,20 @@
     padding: 3rem 1.5rem;
     position: relative;
     width: 100%;
+
+    &.narrow {
+        max-width: 60rem;
+    }
+
+    &.wide {
+        max-width: 140rem;
+    }
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 2rem 0;
 
     .column {
         display: block;
@@ -21,15 +30,6 @@
     .column-1, .column-2, .column-25, .column-3, .column-33, .column-4, .column-5, .column-6, .column-67, .column-7, .column-75, .column-8, .column-9 {
         max-width: 100%;
         width: 100%;
-    }
-
-    @for $i from 1 through 9 {
-        .offset-#{$i} {
-            margin-left: 0;
-        }
-    }
-
-    .offset-25, .offset-33, .offset-67, .offset-75 {
         margin-left: 0;
     }
 

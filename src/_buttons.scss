@@ -2,6 +2,7 @@
     background-color: $white;
     border: 0.1rem $black solid;
     border-radius: 0.4rem;
+    box-shadow: 0px 2px 5px -3px black;
     box-sizing: border-box;
     display: inline-block;
     color: $black;
@@ -12,9 +13,6 @@
     line-height: 4rem;
     margin-bottom: 1rem;
     padding: 0 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
 
     &[disabled] {
         cursor: default;
@@ -73,6 +71,7 @@
     &.orange {
         background-color: $orange;
         border-color: $orange;
+        color: $white;
 
         &:focus, &:hover {
             background-color: lighten($orange, 5%);
